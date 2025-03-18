@@ -1,6 +1,6 @@
 // Calendar Data
 const upcomingVideos = [
-    { date: '2024-03-19', title: 'Wie werde ich besser in fortnite', type: 'Fortnite', save: 'höchst warscheinich'},
+    { date: '2024-03-19', title: 'Wie werde ich besser in Fortnite', type: 'Fortnite', save: 'höchst warscheinich'},
     { date: '2024-03-23', title: 'Minecraft Hardcore: Der gefährlichste erste Tag!', type: 'Minecraft', save: 'vermutlich'},
     { date: '2024-03-28', title: 'Fortnite Mythos: Ist das wirklich möglich?!', type: 'Fortnite', save: 'vermutlich'},
     { date: '2024-03-31', title: 'Minecraft Osterevent: Das geheime Ei?', type: 'Minecraft', save: 'vermutlich'},
@@ -26,6 +26,7 @@ function populateCalendar() {
             <h3>${video.title}</h3>
             <p>${date}</p>
             <p>Art: ${video.type}</p>
+            <p>Dieses Video wird ${video.save} pünktlich erscheinen.</
         `;
         calendarGrid.appendChild(event);
     });
